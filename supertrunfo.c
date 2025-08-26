@@ -10,8 +10,13 @@ int main() {
     char codigo1[50], cidade1[50], codigo2[50], cidade2[50];
     int populacao1, pontosturisticos1, populacao2, pontosturisticos2;
     float area1, pib1, area2, pib2;
+    float densidade1, densidade2, pibpercapita1, pibpercapita2;
 
-    //Coletando os dados da carta 1
+    printf("**** Coletando os dados das cartas ****");
+
+    printf("\n");
+
+     //Coletando os dados da carta 1
 
     printf("Escolha um estado para representar a carta 1:  \n");
     scanf("%s", &estado1); //Escolha do estado da primeira carta 
@@ -35,6 +40,10 @@ int main() {
 
     printf("Informe o PIB da cidade escolhida:  \n");
     scanf("%f", &pib1);
+    
+    // A densidade e o pibpercapita serão calculados e apresentados na apresentação
+    densidade1 = (float) populacao1 / area1;
+    pibpercapita1= (float) pib1 / populacao1;
 
     //Coletando os dados da carta 2
 
@@ -61,6 +70,13 @@ int main() {
     printf("Informe o PIB da cidade escolhida:  \n");
     scanf("%f", &pib2);
 
+    // A densidade e o pibpercapita serão calculados e apresentados na apresentação
+    densidade2 = (float) populacao2 / area2;
+    pibpercapita2 = (float) pib2 / populacao2;
+
+
+    printf("**** Apresentação das cartas****");
+
     //Apresentação dos dados coletados das cartas
 
     printf("\n");
@@ -83,6 +99,10 @@ int main() {
 
     printf("O PIB da carta 1 é: %.2f\n", pib1);//PIB da cidade
 
+    printf("A densidade populacional da carta 1 é: %.2f\n", densidade1); //Densidade populacional carta 1
+
+    printf("O PIB per capita da carta 1 é: %f\n", pibpercapita1); //PIB per capita da carta 1
+
     printf("\n");
 
     //Dados coletados carta 2
@@ -101,7 +121,11 @@ int main() {
 
     printf("A área da carta 2 é: %.2f\n", area2);//Área em quilômetros quadrados
 
-    printf("O PIB da carta 2 é: %.2f", pib2);//PIB da cidade
+    printf("O PIB da carta 2 é: %.2f\n", pib2);//PIB da cidade
+
+    printf("A densidade populacional da carta  é: %.2f\n", densidade2); //Densidade populacional carta 2
+
+    printf("O PIB per capita da carta 2 é: %f\n", pibpercapita2); //PIB per capita da carta 2
 
 
 
