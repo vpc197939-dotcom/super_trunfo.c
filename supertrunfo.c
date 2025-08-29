@@ -6,7 +6,7 @@ int main() {
 
     //Variáveis que serão trabalhadas no jogo
 
-    char estado1[20], estado2[20];
+    char estado1[50], estado2[50];
     char codigo1[50], cidade1[50], codigo2[50], cidade2[50];
     int populacao1, pontosturisticos1, populacao2, pontosturisticos2;
     float area1, pib1, area2, pib2;
