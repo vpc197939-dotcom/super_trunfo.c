@@ -155,7 +155,7 @@ int main() {
     pontosturisticos1 > pontosturisticos2;
     printf("Pontos turísticos: %d\n", pontosturisticos1 > pontosturisticos2); //Comparando a quantidade de pontos turísticos das cartas
 
-    densidade1 > densidade2;
+    densidade1 < densidade2;
     printf("Densidade populacional: %d\n", densidade1 > densidade2); //Comparando as densidades populacionais
 
     pibpercapita1 > pibpercapita2;
